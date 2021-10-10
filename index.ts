@@ -89,29 +89,28 @@ class Spa extends Room {
 
     public printData(): void {
         super.printData();
-        console.log('--- SPA ROOM ---');
         console.log(`Pool size: ${this.poolSize} m2`);
         console.log(`Water temperature in the pool: +${this.temperature}C`);
         console.log('------------');
     }
 }
 
+// ROOMS 
+const room101: Room = new Room(100, 4);
+const room102: Room = new Room(80, 3);
+const room103: Room = new Room(120, 5);
+
+// SPA ROOMS
+const roomSP201: Spa = new Spa(100, 4, 10, 25);
+const roomSP202: Spa = new Spa(80, 3, 15, 22);
+const roomSP203: Spa = new Spa(60, 2, 12, 23);
+
 // HOTEL
 const hotel = new Hotel('The Surfrider Malibu', '23033 Pacific Coast Highway, Malibu, CA', 5);
-
-// ROOMS 
-const room101: Room = new Room(40, 4);
-const room102: Room = new Room(50, 3);
-const room103: Room = new Room(60, 5);
 
 hotel.addRoom(room101);
 hotel.addRoom(room102);
 hotel.addRoom(room103);
-
-// SPA ROOMS
-const roomSP201: Spa = new Spa(40, 4, 10, 25);
-const roomSP202: Spa = new Spa(50, 3, 15, 22);
-const roomSP203: Spa = new Spa(60, 2, 12, 23);
 
 hotel.addRoom(roomSP201);
 hotel.addRoom(roomSP202);
