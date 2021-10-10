@@ -16,7 +16,7 @@ tik šį kartą į _printData()_ metodo parametrąonlyComfort nurodykite true.
 - _Atributai_: size (number) -kambario dydis, priskiriamas sukuriant objektą.capacity (number) -galimas žmoniųkiekistelpantis patalpoje, priskiriamas sukuriant objektą.
 - _Metodai_: comfort() (number) -metodas, kuris grąžina komforto santykį, kiek patalpoje vienam žmogui tenka erdvės. T.y. size/capacity.printData() (void) -public metodas, kurio pagalba atspausdinami visi patalpos duomenys (size, capacity, comfort).
 
-**KlasėSpa**
+**Klasė Spa**
 
 Ši klasė paveldi klasę Room, tačiau turi papildomų -atributų:
 
