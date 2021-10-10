@@ -52,7 +52,7 @@ class Spa extends Room {
         this.poolSize = poolSize;
         this.temperature = temperature;
     }
-    getcomfort() {
+    comfort() {
         let m2ForOnePerson = (this.size - this.poolSize) / this.capacity;
         return m2ForOnePerson;
     }
