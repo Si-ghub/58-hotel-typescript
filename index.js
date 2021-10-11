@@ -58,7 +58,7 @@ class Spa extends Room {
     }
     printData() {
         super.printData();
-        console.log(`Pool size: ${this.poolSize} m2`);
+        console.log(`Pool size: ${this.poolSize.toFixed(1)} m2`);
         console.log(`Water temperature in the pool: +${this.temperature}C`);
         console.log('------------');
     }
